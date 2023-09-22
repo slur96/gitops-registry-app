@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: registry-app
+      app: register-app
   template:
     metadata:
       labels:
-        app: registry-app
+        app: register-app
     spec:
       containers:
-        - name: registry-app
-          image: samuel78896/register-app-pipeline:1.0.0-9
+        - name: registrer-app
+          image: samuel78896/registry-app-pipeline1:1.0.0-9
           resources:
             limits:
               memory: "256Mi"
